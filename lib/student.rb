@@ -38,7 +38,7 @@ class Student
       FROM students")[0][0]
   end 
   
-  def self.create(name,grade)
+  def self.create(hash)
     student = Student.new(name,grade)
     student.save
     student
